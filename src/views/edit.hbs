@@ -1,0 +1,47 @@
+<div class="container">
+  <form action="/edit/{{product._id}}" method="POST"">
+
+    <div class="col-sm-12 col-md-6 mb-2">
+
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        placeholder="Modificar producto"
+        value="{{product.title}}"
+      />
+    </div>
+    <div class="col-sm-12 col-md-6 mb-2">
+
+      <input
+        type="text"
+        class="form-control"
+        name="price"
+        placeholder="Modificar el precio"
+        value="{{product.price}}"
+      />
+    </div>
+    <div class="col-sm-12 col-md-6 mb-2">
+
+      <input
+        type="text"
+        class="form-control"
+        name="stock"
+        placeholder="Modificar el stock"
+        value="{{product.stock}}"
+      />
+    </div>
+    <div class="col-sm-12 col-md-6 mb-2">
+
+      <input
+        type="text"
+        class="form-control"
+        name="image"
+        placeholder="Modificar la Url de la imagen"
+        value="{{product.image}}"
+      />
+    </div>
+    <button class="btn btn-primary btn-large mt-5">Modificar Datos</button>
+
+  </form>
+</div>
